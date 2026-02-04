@@ -163,6 +163,8 @@ set(GAME_SOURCES
   pathfinding/pathfinding.h
   pentago/pentago.cc
   pentago/pentago.h
+  perudo/perudo.cc
+  perudo/perudo.h
   phantom_go/phantom_go.h
   phantom_go/phantom_go.cc
   phantom_go/phantom_go_board.h
@@ -611,6 +613,11 @@ add_test(pathfinding_test pathfinding_test)
 add_executable(pentago_test pentago/pentago_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)
 add_test(pentago_test pentago_test)
+
+add_executable(perudo_test perudo/perudo_test.cc ${OPEN_SPIEL_OBJECTS}
+               $<TARGET_OBJECTS:tests>
+               $<TARGET_OBJECTS:algorithms>)
+add_test(perudo_test perudo_test)
 
 add_executable(phantom_ttt_test phantom_ttt/phantom_ttt_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)

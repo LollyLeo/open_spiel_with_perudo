@@ -118,6 +118,7 @@ EXPECTED_MANDATORY_GAMES = frozenset([
     "othello",
     "oware",
     "pentago",
+    "perudo",
     "pathfinding",
     "phantom_go",
     "phantom_ttt",
